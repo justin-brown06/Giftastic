@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giftastic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="container col-12 justify-contents-center">
+            <div class="row">
+                <div class="container col-10">
+                    <button class="btn btn-dark" data-starwars="chewbacca">Chewbacca</button>
+                    <button class="btn btn-dark" data-starwars="jar-jar-binks">Jar-jar Binks</button>
+                    <button class="btn btn-dark" data-starwars="obi-wan">Obi-Wan Kenobi</button>
+                    <button class="btn btn-dark" data-starwars="anakin-skywalker">Anakin Skywalker</button>
+                    <button class="btn btn-dark" data-starwars="padme">Padme</button>
+                    <button class="btn btn-dark" data-starwars="yoda">Yoda</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col-10">
+                    <button class="btn btn-dark" data-starwars="qui-gonn-jinn">Qui-Gonn Jinn</button>
+                    <button class="btn btn-dark" data-starwars="darth-maul">Darth Maul</button>
+                    <button class="btn btn-dark" data-starwars="darth-vader">Darth Vader</button>
+                    <button class="btn btn-dark" data-starwars="emporer-palpatine">Emporer Palpatine</button>
+                    <button class="btn btn-dark" data-starwars="luke-skywalker">Luke Skywalker</button>
+                    <button class="btn btn-dark" data-starwars="han-solo">Han Solo</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col-10" id="add-gif-button">
+
+                </div>
+            </div>
+            <form role="form">
+                <div>
+                    <input type="text" class="form-control" id="gif-search" placeholder="Add Character to search GIFs">
+                </div>
+                <button type="submit" class="btn btn-default" id="add-gif">
+                    <i class="fa fa-search"></i> Search</button>
+                </form>
+        </div>
+        <div class="col-12" id="gifs-appear-here">
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
